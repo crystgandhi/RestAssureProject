@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-03T10:41:44 EDT" name="Default suite" finished-at="2023-06-03T10:41:53 EDT" duration-ms="8388">
+    <groups>
+    </groups>
+    <test started-at="2023-06-03T10:41:44 EDT" name="Default test" finished-at="2023-06-03T10:41:53 EDT" duration-ms="8388">
+      <class name="apiTest.UserTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apiTest.UserTests@505fc5a4]" started-at="2023-06-03T10:41:44 EDT" name="setUp" finished-at="2023-06-03T10:41:46 EDT" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPostUser()[pri:1, instance:apiTest.UserTests@505fc5a4]" started-at="2023-06-03T10:41:46 EDT" name="testPostUser" finished-at="2023-06-03T10:41:52 EDT" duration-ms="6623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testReadUser()[pri:2, instance:apiTest.UserTests@505fc5a4]" started-at="2023-06-03T10:41:52 EDT" name="testReadUser" finished-at="2023-06-03T10:41:52 EDT" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadUser -->
+        <test-method signature="testUpdateUser()[pri:3, instance:apiTest.UserTests@505fc5a4]" started-at="2023-06-03T10:41:52 EDT" name="testUpdateUser" finished-at="2023-06-03T10:41:53 EDT" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+      </class> <!-- apiTest.UserTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
