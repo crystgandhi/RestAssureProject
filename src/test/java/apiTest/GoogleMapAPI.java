@@ -1,20 +1,30 @@
 package apiTest;
 
+<<<<<<< HEAD
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 
+=======
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+>>>>>>> 50a5fcc4cb69c65fbeca1813ef4e17edd14ea15b
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import java.util.HashMap;
 
 public class GoogleMapAPI {
 
+<<<<<<< HEAD
 	@Test(priority = 1)
 	public void testMap() {
 
 		// Hashmap to pass the payload
+=======
+	@Test
+	public void testMap() {
+>>>>>>> 50a5fcc4cb69c65fbeca1813ef4e17edd14ea15b
 		HashMap<Object, Object> location = new HashMap<Object, Object>();
 		location.put("lat", "38.383494");
 		location.put("lng", "33.427362");
@@ -26,6 +36,7 @@ public class GoogleMapAPI {
 		location.put("language", "French-IN");
 		location.put("types", "shoe park, shop");
 		System.out.println(location.get("name"));
+<<<<<<< HEAD
 		// post method to create new resource(to add a place)
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123")
@@ -62,3 +73,15 @@ public class GoogleMapAPI {
 	}
 
 }
+=======
+
+		RestAssured.baseURI = "https://rahulshettyacademy.com";
+
+		given().log().all().queryParam("key", "qaclick123").body(location).contentType("application/json").when()
+				.post("/maps/api/place/add/json").then().log().all().assertThat().statusCode(200)
+				.header("server",  "Apache/2.4.41 (Ubuntu)");
+				
+		
+	}
+	}
+>>>>>>> 50a5fcc4cb69c65fbeca1813ef4e17edd14ea15b
