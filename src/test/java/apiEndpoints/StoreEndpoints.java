@@ -14,5 +14,9 @@ public class StoreEndpoints {
 				.post(Routes.post_url2);
 		return response;
 	}
+	public static Response readUser(String userName) {
+		Response response = given().pathParam("username", userName).when().get(Routes.get_url2);
+		return response;
+	}
 
 }
